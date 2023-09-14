@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="tienda" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			
+			<property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/> <!--Driver-->
+			<property name="javax.persistence.jdbc.url" 
+			value="jdbc:h2:C:\Users\Andres Pontnau\Desktop\ORACLE ONE\BACKEND\Spring Boot\tienda\database"/> <!--'jdbc:h2' y el nombre del archivo 'database'-->
+			<property name="javax.persistence.jdbc.user" value="sa"/> <!--Usuario-->
+			<property name="javax.persistence.jdbc.password" value="AluraH2"/> <!--password-->
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+			<property name="hibernate.show_sql" value="true"/> <!--ver las consultas SQL que Hibernate ejecuta-->
+			<property name="hibernate.format_sql" value="true"/><!--Hibernate formateará las consultas SQL generadas para que sean más legibles-->
+			<property name="hibernate.hbm2ddl.auto" value="create-drop"/><!--controla la forma en que Hibernate administra el esquema de la base de datos-->
+
+
+		</properties>
+	</persistence-unit>
+</persistence>

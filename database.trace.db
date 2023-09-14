@@ -1,0 +1,8 @@
+2023-09-02 16:52:12 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]PEDIDOS"; se esperaba "PREPARE"
+Syntax error in SQL statement "[*]PEDIDOS"; expected "PREPARE"; SQL statement:
+PEDIDOS [42001-214]
+2023-09-02 16:52:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]PEDIDOS PRODUCTOS"; se esperaba "PREPARE"
+Syntax error in SQL statement "[*]PEDIDOS PRODUCTOS"; expected "PREPARE"; SQL statement:
+PEDIDOS PRODUCTOS [42001-214]
